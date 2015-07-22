@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16t-0J-Vfz">
+                                <rect key="frame" x="240" y="124" width="120" height="45"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="Calculate!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="% Alcohol Content per Beer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iIw-3J-HDC">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="8by-bJ-do0">
+                                <rect key="frame" x="14" y="66" width="572" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mv8-CZ-hn3">
+                                <rect key="frame" x="31" y="216" width="39" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="16t-0J-Vfz" firstAttribute="top" secondItem="8by-bJ-do0" secondAttribute="bottom" constant="8" id="A8P-Wj-SRn"/>
+                            <constraint firstItem="16t-0J-Vfz" firstAttribute="centerX" secondItem="8by-bJ-do0" secondAttribute="centerX" id="BqJ-ur-Rhl"/>
+                            <constraint firstAttribute="centerX" secondItem="iIw-3J-HDC" secondAttribute="centerX" id="DE4-nX-lCr"/>
+                            <constraint firstItem="iIw-3J-HDC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="GZv-QG-JRc"/>
+                            <constraint firstItem="16t-0J-Vfz" firstAttribute="top" secondItem="8by-bJ-do0" secondAttribute="bottom" constant="28" id="MUP-JF-K1J"/>
+                            <constraint firstItem="16t-0J-Vfz" firstAttribute="centerX" secondItem="8by-bJ-do0" secondAttribute="centerX" id="OHR-Za-1EW"/>
+                            <constraint firstItem="Mv8-CZ-hn3" firstAttribute="top" secondItem="16t-0J-Vfz" secondAttribute="bottom" constant="47" id="PS4-9M-x2z"/>
+                            <constraint firstItem="16t-0J-Vfz" firstAttribute="width" secondItem="Mv8-CZ-hn3" secondAttribute="width" id="SE9-Qm-A7q"/>
+                            <constraint firstItem="8by-bJ-do0" firstAttribute="width" secondItem="iIw-3J-HDC" secondAttribute="width" id="Tf6-x7-GFh"/>
+                            <constraint firstAttribute="width" secondItem="iIw-3J-HDC" secondAttribute="width" id="Yec-A4-07x"/>
+                            <constraint firstItem="Mv8-CZ-hn3" firstAttribute="top" secondItem="16t-0J-Vfz" secondAttribute="bottom" constant="67" id="eC1-PU-zjv"/>
+                            <constraint firstItem="8by-bJ-do0" firstAttribute="centerX" secondItem="iIw-3J-HDC" secondAttribute="centerX" id="hnJ-8m-npY"/>
+                            <constraint firstItem="16t-0J-Vfz" firstAttribute="leading" secondItem="Mv8-CZ-hn3" secondAttribute="trailing" constant="-329" id="ie8-e5-RfH"/>
+                            <constraint firstItem="iIw-3J-HDC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jPR-3h-urh"/>
+                            <constraint firstItem="iIw-3J-HDC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kDL-Qs-H8u"/>
+                            <constraint firstItem="8by-bJ-do0" firstAttribute="top" secondItem="iIw-3J-HDC" secondAttribute="bottom" constant="8" id="tkY-uO-Ljb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mv8-CZ-hn3" secondAttribute="trailing" constant="15" id="xOk-8R-72t"/>
+                            <constraint firstItem="Mv8-CZ-hn3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="yrW-R7-o16"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DE4-nX-lCr"/>
+                                <exclude reference="Yec-A4-07x"/>
+                                <exclude reference="eC1-PU-zjv"/>
+                                <exclude reference="xOk-8R-72t"/>
+                                <exclude reference="A8P-Wj-SRn"/>
+                                <exclude reference="BqJ-ur-Rhl"/>
+                                <exclude reference="ie8-e5-RfH"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="0ZO-AP-edZ" appends="YES" id="wSZ-7z-aXr"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="0ZO-AP-edZ"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
